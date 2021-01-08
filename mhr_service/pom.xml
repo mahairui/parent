@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--指定父级-->
+    <parent>
+        <groupId>com.mhr</groupId>
+        <artifactId>parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <!--本包定位(下标)-->
+    <groupId>com.mhr</groupId>
+    <artifactId>mhr_service</artifactId>
+    <name>service</name>
+    <version>${mhr.version}</version>
+
+
+    <dependencies>
+
+        <!--service 核心包-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+
+        <!--引用实体-->
+        <dependency>
+            <groupId>com.mhr</groupId>
+            <artifactId>mhr_entity</artifactId>
+            <version>${mhr.version}</version>
+        </dependency>
+        <!--引用mapper层-->
+        <dependency>
+            <groupId>com.mhr</groupId>
+            <artifactId>mhr_mapper</artifactId>
+            <version>${mhr.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mhr</groupId>
+            <artifactId>mhr_basic</artifactId>
+            <version>${mhr.version}</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>
